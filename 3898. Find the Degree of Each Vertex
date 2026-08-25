@@ -1,0 +1,11 @@
+class Solution:
+    def findDegrees(self, m: list[list[int]]) -> list[int]:
+        n=len(m)
+        c=0
+        r=[]
+        for i in range(0,n):
+            for j in range(0,len(m[0])):
+                if m[i][j]==1:
+                    c+=1
+            r.append(c)
+            c=0
